@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="ejercicio24_2p.Views.ReproducirVideoPage">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="White">
+            <Frame BackgroundColor="RoyalBlue" Padding="24" CornerRadius="0">
+                <Label Text="Descripcion" x:Name="lbldescripcion" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <video:VideoPlayer 
+                    x:Name="videoPlayer2"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="5"
+                    HeightRequest="450"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
